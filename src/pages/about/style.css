@@ -1,5 +1,240 @@
+.mainhead{
+    color: white;
+    font-size: 16px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Adjust spacing between cards as needed */
+  }
+  
+  .card {
+    position: relative;
+    max-width: 292px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    position: relative;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .card1 a,
+  .card2 a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card1 p,
+  .card2 p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .card1 p.small,
+  .card2 p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  /* Card 1 Styles */
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: #0c2d48;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: white;
+  }
+  
+  /* Card 2 Styles */
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: #0c2d48;
+  }
+  
+  .card2:hover p {
+    transition: all 0.3s ease-out;
+    color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  /* Card 3 Styles */
+  .card3 {
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: #00838d;
+  }
+  
+  .card3:hover .go-corner {
+    transition: opacity 0.3s linear;
+    opacity: 1;
+  }
+  
+  /* Card 4 Styles */
+  .card4 {
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+  
+  /* Animation for Card 1 on mobile view */
+  @keyframes card1-hover {
+    0% {
+      transform: scale(1);
+      background-color: #f2f8f9;
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: #0c2d48;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #f2f8f9;
+    }
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 767px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card1 {
+      animation: card1-hover 3s infinite; /* Apply the animation continuously */
+    }
+    .card2 {
+        animation: card1-hover 4s infinite; /* Apply the animation continuously */
+      }
+  }
+  
+  
+
+
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(0.2rem + 2.128vw)
 }
 
 .table td,
@@ -20,7 +255,7 @@
 
 .progress {
     height: 5px;
-    background: var(--secondary);
+    background: black;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 30px;
@@ -42,7 +277,7 @@
     font-size: 17px;
     font-weight: bold;
     font-style: italic;
-    color: var(--text-color);
+    color: white;
 }
 
 @-webkit-keyframes animate-positive {

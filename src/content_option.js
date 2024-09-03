@@ -16,7 +16,7 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "Abit about my self",
     aboutme: "Versatile developer with a Bachelor’s in Computer Science, distinguished for collaborative skills and a track record of independently delivering impactful results. Ample experience in backend development, delivering scalable, well-documented, tested, and operable code. Efficient in collaborating and communicating new ideas and opinions.",
 };
 const worktimeline = [{
