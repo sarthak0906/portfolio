@@ -16,7 +16,7 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "Abit about my self",
+    title: "A bit about my self",
     aboutme: "Versatile developer with a Bachelor’s in Computer Science, distinguished for collaborative skills and a track record of independently delivering impactful results. Ample experience in backend development, delivering scalable, well-documented, tested, and operable code. Efficient in collaborating and communicating new ideas and opinions.",
 };
 const worktimeline = [{
@@ -37,11 +37,23 @@ const worktimeline = [{
 ];
 
 const skills = [{
+        name: "NodeJs",
+        value: 95,
+    },{
+        name: "TypeScript",
+        value: 95,
+    },{
+        name: "ExpressJS",
+        value: 95,
+    },{
+        name: "MySQL",
+        value: 90,
+    },{
         name: "Python",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Django",
         value: 85,
     },
     {
@@ -58,23 +70,9 @@ const skills = [{
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-];
-
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "",
         link: "#",
     },
     {
@@ -158,7 +156,6 @@ export {
     dataportfolio,
     worktimeline,
     skills,
-    services,
     introdata,
     contactConfig,
     socialprofils,

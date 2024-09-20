@@ -24,12 +24,18 @@
   .card3,
   .card4 {
     position: relative;
-    background-color: #f2f8f9;
+    /* background-color: #f2f8f9; */
     border-radius: 4px;
     padding: 32px 24px;
     margin: 12px;
     text-decoration: none;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0.5px);
+    border-radius: 1rem;
+    transition: all ease 0.3s;
   }
   
   .card1 a,
@@ -44,7 +50,7 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
-    color: #666;
+    color: #ffffff;
   }
   
   .card1 p.small,
@@ -113,6 +119,10 @@
     top: -4px;
     border: 1px solid #ccc;
     background-color: #0c2d48;
+  }
+  
+  .card2:hover:before {
+    transform: scale(21);
   }
   
   .card2:hover p {
@@ -203,7 +213,7 @@
   @keyframes card1-hover {
     0% {
       transform: scale(1);
-      background-color: #f2f8f9;
+      background-color: #00838d;
     }
     50% {
       transform: scale(1.05);
@@ -211,7 +221,7 @@
     }
     100% {
       transform: scale(1);
-      background-color: #f2f8f9;
+      background-color: #00838d;
     }
   }
   
@@ -223,10 +233,10 @@
     }
   
     .card1 {
-      animation: card1-hover 3s infinite; /* Apply the animation continuously */
+      animation: card1-hover 4s infinite; /* Apply the animation continuously */
     }
     .card2 {
-        animation: card1-hover 4s infinite; /* Apply the animation continuously */
+        animation: card1-hover 5s infinite; /* Apply the animation continuously */
       }
   }
   
